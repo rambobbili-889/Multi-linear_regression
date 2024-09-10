@@ -90,13 +90,20 @@ def training_data(self):
 Key Features:
 
 Model Training: The model is trained using the LinearRegression class from scikit-learn.
+
 Predictions: The model predicts car purchase amounts for the training set.
+
 Performance Metrics:
 R-squared: Indicates how well the model explains the variance in the dependent variable.
+
 Mean Squared Error (MSE): Average squared difference between actual and predicted values.
+
 Root Mean Squared Error (RMSE): Square root of MSE.
+
 Mean Absolute Error (MAE): Average absolute difference between actual and predicted values.
+
 3. Testing the Model
+4. 
 The testing_data method evaluates the model's performance on the testing data:
 
 python
@@ -123,34 +130,53 @@ def testing_data(self):
 Testing:
 
 The model is evaluated on the test dataset to assess its generalization performance.
+
 The same metrics used for the training data are printed for the testing data.
+
 Usage
+
 To run the project, place the Car_Purchasing_Data.csv in the same directory as MULTI_LINEAR_REGRESSION.py, then execute:
 
 bash
+
 Copy code
 python MULTI_LINEAR_REGRESSION.py
 Key Features
+
 Model Training: The model is trained on 80% of the dataset.
+
 Model Evaluation: The model is evaluated on both training and testing datasets.
+
 Preprocessing: Automatically removes irrelevant columns.
+
 Notes
+
 The current code drops Customer Name, Customer e-mail, and Country. If other columns need to be excluded, modify the drop() function.
+
 The dataset split uses a random_state to ensure reproducibility.
+
 Sample Output
+
 Training Data Output:
+
 plaintext
+
 Copy code
 The accuracy of the training data is : 0.9994907891819212
 The loss factor using the Mean Squared Error is : 57280.69040331835
 The loss factor using the root_mean_squared_error is : 239.3338471744403
 The loss factor using the mean_absolute_error is : 207.31073537356392
+
 Testing Data Output:
+
 plaintext
+
 Copy code
+
 The accuracy of the testing data is : 0.9995270396830659
 The loss factor of the testing data using the Mean Squared Error is : 60531.52803897554
 The loss factor using the root_mean_squared_error is : 246.03155903049418
 The loss factor using the mean_absolute_error is : 213.03617288115566
+
 Conclusion
 This project demonstrates how to implement Multi-Linear Regression using Python and scikit-learn. It provides insight into predicting customer car purchasing amounts based on several factors, and uses key metrics to evaluate model performance for both training and testing datasets.
