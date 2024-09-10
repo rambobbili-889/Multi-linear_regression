@@ -139,6 +139,7 @@ The dataset is split randomly, but the random state ensures reproducibility.
 
 Output 
 Training Data Output:
+python
 vbnet
 Copy code
 The accuracy of the training data  is : 0.9994907891819212
@@ -149,6 +150,7 @@ The loss factor using the root_mean_squared_error is :239.3338471744403
 
 The loss factor using the  mean_absolute_error is :207.31073537356392
 
+python
 vbnet
 Copy code
 The accuracy of the testing data  is : 0.9995270396830659
