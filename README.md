@@ -142,15 +142,21 @@ Training Data Output:
 vbnet
 Copy code
 The accuracy of the training data  is : 0.9994907891819212
+
 The loss factor using the Mean Squared Error is :57280.69040331835
+
 The loss factor using the root_mean_squared_error is :239.3338471744403
+
 The loss factor using the  mean_absolute_error is :207.31073537356392
 
 vbnet
 Copy code
 The accuracy of the testing data  is : 0.9995270396830659
+
 The loss factor of the testing data using the Mean Squared Error is :60531.52803897554
+
 The loss factor of the testing data  using the root_mean_squared_error is :246.03155903049418
+
 The loss factor of the testing data using the  mean_absolute_error is :213.03617288115566
 
 
