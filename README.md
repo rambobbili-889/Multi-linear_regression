@@ -71,12 +71,19 @@ def training_data(self):
     print(f'The loss factor using the root_mean_squared_error is: {root_mean_squared_error(self.y_train, self.y_train_predict)}')
     print(f'The loss factor using the mean_absolute_error is: {mean_absolute_error(self.y_train, self.y_train_predict)}')
 Model Training: A linear regression model is fitted using the training data.
+
 Predictions: The model predicts the target variable for the training set.
+
 Performance Metrics:
+
 R-squared: Shows how well the model explains the variance in the target variable.
+
 Mean Squared Error (MSE): Measures the average squared difference between actual and predicted values.
+
 Root Mean Squared Error (RMSE): The square root of MSE.
+
 Mean Absolute Error (MAE): The average absolute difference between actual and predicted values.
+
 3. Testing the Model
 python
 Copy code
@@ -99,22 +106,38 @@ def testing_data(self):
     print(f'The loss factor of the testing data using the Mean Squared Error is: {mean_squared_error(self.y_test, self.y_test_predict)}')
     print(f'The loss factor of the testing data using the root_mean_squared_error is: {root_mean_squared_error(self.y_test, self.y_test_predict)}')
     print(f'The loss factor of the testing data using the mean_absolute_error is: {mean_absolute_error(self.y_test, self.y_test_predict)}')
+
 Testing: Predictions are made on the test dataset using the trained model.
+
 Evaluation: The same metrics used for training data are calculated and printed for the test data to assess model generalization.
 Usage
+
 Place the CSV dataset (Car_Purchasing_Data.csv) in the same directory as the Python script.
+
 Run the script by executing:
+
 bash
+
 Copy code
+
 python MULTI_LINEAR_REGRESSION.py
+
 Key Features
+
 Model Training: The model is trained using the training set split from the original dataset.
+
 Model Evaluation: The model's performance is evaluated on both training and testing sets using multiple metrics.
+
 Data Preprocessing: Unnecessary columns are automatically removed before applying the model.
+
 Notes
+
 The current code only focuses on removing specific columns (Customer Name, Customer e-mail, Country). If more columns are irrelevant, adjust the drop() function accordingly.
+
 The dataset is split randomly, but the random state ensures reproducibility.
-Output Example
+
+
+Output 
 Training Data Output:
 vbnet
 Copy code
@@ -129,6 +152,7 @@ The accuracy of the testing data  is : 0.9995270396830659
 The loss factor of the testing data using the Mean Squared Error is :60531.52803897554
 The loss factor of the testing data  using the root_mean_squared_error is :246.03155903049418
 The loss factor of the testing data using the  mean_absolute_error is :213.03617288115566
+
 
 Conclusion
 This project demonstrates a simple implementation of Multi-Linear Regression using the scikit-learn library. It provides a solid foundation for analyzing customer-related datasets and predicting target variables based on multiple factors. The results include detailed metrics for both training and testing data, offering insights into the model's accuracy and error rates.
